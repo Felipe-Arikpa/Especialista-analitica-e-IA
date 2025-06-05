@@ -29,11 +29,20 @@ Este paquete realiza predicciones de tratamientos médicos a partir de notas cl�
     pip install -r requirements.txt
     ```
 
+### entrenar el modelo
+Es necesario entrenar el modelo ya que por su peso no hace aprte del repositorio.
+una vez activo el ambiiente usa los siguientes comandos desde la raíz del proyecto
+
+```bash
+python -m Homework.src._internals.txt_model
+python -m Homework.src._internals.img_model
+```
+
 ### Uso
 
-Una vez activado el ambiente virtual y con las dependencias instaladas, puedes ejecutar los predictores desde la raíz del proyecto (`ESPECIALISTA-ANALITICA-E-IA`), reemplazando las rutas de ejemplo con tus propias rutas.
+Una vez activado el ambiente virtual, con las dependencias instaladas, y los modelos entrenados puedes ejecutar los predictores desde la raíz del proyecto (`ESPECIALISTA-ANALITICA-E-IA`), reemplazando las rutas de ejemplo con tus propias rutas. Antes de probarlo, ten en cuenta qué:
 
-`input_dir` debe contener un único archivo `.csv` separado por punto y coma y/o imágenes en los formatos `.jpg`, `.jpeg` o `.png`.
+`input_dir` es una carpeta que debe contener un único archivo `.csv` separado por punto y coma y/o una o varias imágenes en los formatos `.jpg`, `.jpeg` o `.png`.
 
 El archivo `.csv` debe contener las siguientes columnas:
 
@@ -49,13 +58,4 @@ El archivo `.csv` debe contener las siguientes columnas:
 
 ```bash
 python -m Homework --input_dir "/ruta/a/tu/directorio_de_entrada" --output_dir "/ruta/donde/guardar/predicciones"
-```
-
-
-### reentrenar el modelo
-Si se requiere reentrenar el modelo, usar los siguientes comandos desde la raíz del proyecto
-
-```bash
-python -m Homework.src._internals.txt_model
-python -m Homework.src._internals.img_model
 ```
