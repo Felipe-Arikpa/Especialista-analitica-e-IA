@@ -30,8 +30,8 @@ Este paquete realiza predicciones de tratamientos médicos a partir de notas cl�
     ```
 
 ### entrenar el modelo
-Es necesario entrenar el modelo ya que por su peso no hace aprte del repositorio.
-una vez activo el ambiiente usa los siguientes comandos desde la raíz del proyecto
+Es necesario entrenar los modelos, ya que por su peso no hace parte del repositorio.
+una vez activo el ambiente, usa los siguientes comandos desde la raíz del proyecto
 
 ```bash
 python -m Homework.src._internals.txt_model
@@ -40,7 +40,7 @@ python -m Homework.src._internals.img_model
 
 ### Uso
 
-Una vez activado el ambiente virtual, con las dependencias instaladas, y los modelos entrenados puedes ejecutar los predictores desde la raíz del proyecto (`ESPECIALISTA-ANALITICA-E-IA`), reemplazando las rutas de ejemplo con tus propias rutas. Antes de probarlo, ten en cuenta qué:
+Una vez activado el ambiente virtual, con las dependencias instaladas, y los modelos entrenados, puedes ejecutar los predictores desde la raíz del proyecto (`ESPECIALISTA-ANALITICA-E-IA`), reemplazando las rutas de ejemplo con tus propias rutas. Antes de probarlo, ten en cuenta qué:
 
 `input_dir` es una carpeta que debe contener un único archivo `.csv` separado por punto y coma y/o una o varias imágenes en los formatos `.jpg`, `.jpeg` o `.png`.
 
