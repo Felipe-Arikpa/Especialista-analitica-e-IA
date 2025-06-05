@@ -1,0 +1,22 @@
+# Ambiente virtual
+.venv/
+venv/
+ENV/
+env/
+*.pyc
+__pycache__/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos  IDEs
+.idea/
+.vscode/
+
+# logs
+*.log
+
+# modelos
+
+*.pkl
